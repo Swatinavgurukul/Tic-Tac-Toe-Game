@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+
 class Square extends React.Component {
+  
   render() {
     return (
       <button className="square">
         {this.props.value}
+
       </button>
     );
   }
@@ -40,3 +43,7 @@ class Board extends React.Component{
   }
 }
 export default Board;
+
+// Passing Data Through Props ...
+
+

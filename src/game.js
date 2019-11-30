@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
-
 class Square extends React.Component {
-  
+  constructor(props){
+    super(props);
+    this.state={
+      value:null,
+    };
+  }
   render() {
     return (
-      <button className="square">
-        {this.props.value}
-
+      <button className="square" onClick={()=>this.setState({value:'X'})}>
+        {this.state.value}
+        {/* {this.props.value} */}
+        
       </button>
     );
   }
@@ -43,7 +48,4 @@ class Board extends React.Component{
   }
 }
 export default Board;
-
-// Passing Data Through Props ...
-
 
